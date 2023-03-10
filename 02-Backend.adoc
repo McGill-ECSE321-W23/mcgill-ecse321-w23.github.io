@@ -12,8 +12,8 @@ include::02-5-Spring-CRUD.adoc[]
 
 include::02-6-Persistence-Testing.adoc[]
 
-//include::02-7-Spring-RESTful-Services.adoc[]
+include::02-7-Spring-RESTful-Services.adoc[]
 
-//include::02-8-Backend-Service-Testing.adoc[]
+include::02-8-Backend-Service-Testing.adoc[]
 
-//include::02-9-Backend-Test-Coverage.adoc[]
+include::02-9-Backend-Test-Coverage.adoc[]
