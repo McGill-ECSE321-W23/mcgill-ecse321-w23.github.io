@@ -2650,17 +2650,40 @@ The Spring Tools Suite (STS) version of Eclipse already ships with the plugin pr
 <div class="olist arabic data-line-15">
 <ol class="arabic">
 <li class="data-line-15">
-<p>Create a new Gradle project in Eclipse by clicking on <em>File</em> &gt; <em>New</em> &gt; <em>Other</em><br>
-image::coverage-1.PNG[New Project]</p>
+<p>Create a new Gradle project in Eclipse by clicking on <em>File</em> &gt; <em>New</em> &gt; <em>Other</em><br></p>
 </li>
-<li class="data-line-18">
-<p>Under <em>Gradle</em>, choose Gradle Project<br>
-image::coverage-2.PNG[New Gradle Project]</p>
+</ol>
+</div>
+<div class="imageblock data-line-17">
+<div class="content">
+<img src="figs/coverage-1.PNG" alt="New Project">
+</div>
+</div>
+<div class="olist arabic data-line-19">
+<ol class="arabic">
+<li class="data-line-19">
+<p>Under <em>Gradle</em>, choose Gradle Project<br></p>
 </li>
-<li class="data-line-21">
-<p>Click on <em>Next</em>, then name your project <em>tutorial7</em>, click on <em>Finish</em><br>
-image::coverage-3.PNG[Project Name]</p>
-<div class="admonitionblock note data-line-24">
+</ol>
+</div>
+<div class="imageblock data-line-21">
+<div class="content">
+<img src="figs/coverage-2.PNG" alt="New Gradle Project">
+</div>
+</div>
+<div class="olist arabic data-line-23">
+<ol class="arabic">
+<li class="data-line-23">
+<p>Click on <em>Next</em>, then name your project <em>tutorial7</em>, click on <em>Finish</em><br></p>
+</li>
+</ol>
+</div>
+<div class="imageblock data-line-25">
+<div class="content">
+<img src="figs/coverage-3.PNG" alt="Project Name">
+</div>
+</div>
+<div class="admonitionblock note data-line-28">
 <table>
 <tr>
 <td class="icon">
@@ -2672,14 +2695,15 @@ The project may take some time to be created.
 </tr>
 </table>
 </div>
-</li>
-<li class="data-line-26">
+<div class="olist arabic data-line-30">
+<ol class="arabic">
+<li class="data-line-30">
 <p>Create a new package instead of the default ones for both the source and test folders (e.g <code>ca.mcgill.ecse321.tutorial7</code>) and move the default generated classes (<code>Library</code> and <code>LibraryTest</code>) to this package.<br>
 image::coverage-4.PNG[Create Packages]</p>
 </li>
-<li class="data-line-29">
+<li class="data-line-33">
 <p>Change the code in the <code>Library</code> class</p>
-<div class="listingblock data-line-32">
+<div class="listingblock data-line-36">
 <div class="content">
 <pre class="highlight"><code class="language-java" data-lang="java">package ca.mcgill.ecse321.tutorial7;
 
@@ -2710,9 +2734,9 @@ public class Library {
 </div>
 </div>
 </li>
-<li class="data-line-61">
+<li class="data-line-65">
 <p>Change the code in the <code>LibraryTest</code> class</p>
-<div class="listingblock data-line-64">
+<div class="listingblock data-line-68">
 <div class="content">
 <pre class="highlight"><code class="language-java" data-lang="java">package ca.mcgill.ecse321.tutorial7;
 
@@ -2748,9 +2772,9 @@ public class LibraryTest {
 </ol>
 </div>
 </div>
-<div class="sect3 data-line-95">
+<div class="sect3 data-line-99">
 <h4 id="_retrieving_code_coverage_metrics">2.9.3. Retrieving Code Coverage Metrics</h4>
-<div class="admonitionblock note data-line-98">
+<div class="admonitionblock note data-line-102">
 <table>
 <tr>
 <td class="icon">
@@ -2762,33 +2786,45 @@ We can straightforwardly manage code coverage using JaCoCo inside Eclipse with n
 </tr>
 </table>
 </div>
-<div class="olist arabic data-line-100">
+<div class="olist arabic data-line-104">
 <ol class="arabic">
-<li class="data-line-100">
-<p>Run the Test in coverage mode using Eclemma. Click on <em>LibraryTest</em>, <em>Coverage As</em>, <em>1 JUnit Test</em><br>
-image::coverage-5.PNG[Full Branch Coverage]</p>
-</li>
-<li class="data-line-103">
-<p>Verify that we have 100% branch coverage.<br>
-image::coverage-6.PNG[Full Branch Coverage-Eclemma]</p>
+<li class="data-line-104">
+<p>Run the Test in coverage mode using Eclemma. Click on <em>LibraryTest</em>, <em>Coverage As</em>, <em>1 JUnit Test</em><br></p>
 </li>
 </ol>
 </div>
+<div class="imageblock data-line-106">
+<div class="content">
+<img src="figs/coverage-5.PNG" alt="Full Branch Coverage">
 </div>
 </div>
-<div class="sect2 data-line-106">
-<h3 id="_event_registration_application_unit_code_coverage">2.10. Event Registration Application Unit Code Coverage</h3>
 <div class="olist arabic data-line-108">
 <ol class="arabic">
 <li class="data-line-108">
+<p>Verify that we have 100% branch coverage.<br></p>
+</li>
+</ol>
+</div>
+<div class="imageblock data-line-110">
+<div class="content">
+<img src="figs/coverage-6.PNG" alt="Full Branch Coverage-Eclemma">
+</div>
+</div>
+</div>
+</div>
+<div class="sect2 data-line-112">
+<h3 id="_event_registration_application_unit_code_coverage">2.10. Event Registration Application Unit Code Coverage</h3>
+<div class="olist arabic data-line-114">
+<ol class="arabic">
+<li class="data-line-114">
 <p>Check the code coverage of the service unit tests in the EventRegistration-Backend project.</p>
 </li>
-<li class="data-line-110">
+<li class="data-line-116">
 <p>If you want to run the tests using gradle, use the <em>Jacoco plugin</em> with plugin ID <code>jacoco</code>. After adding it to the <em>build.gradle</em> file, the plugin section should look like the one below:</p>
 </li>
 </ol>
 </div>
-<div class="listingblock data-line-111">
+<div class="listingblock data-line-117">
 <div class="content">
 <pre class="highlight"><code class="language-gradle" data-lang="gradle">plugins {
 	id 'org.springframework.boot' version '2.2.4.RELEASE'
@@ -2798,17 +2834,17 @@ image::coverage-6.PNG[Full Branch Coverage-Eclemma]</p>
 }</code></pre>
 </div>
 </div>
-<div class="olist arabic data-line-120">
+<div class="olist arabic data-line-126">
 <ol class="arabic">
-<li class="data-line-120">
+<li class="data-line-126">
 <p>This new plugin gives us the <code>jacocoTestReport</code> task that can generate html reports. Try executing this task from the terminal and see the generated HTML files under <em>build/reports/jacoco/test/html/</em>!</p>
 </li>
-<li class="data-line-122">
+<li class="data-line-128">
 <p>If you wish, you can check enforce a certain treshold on the test cases with this Jacoco plugin. With the definition below, the <code>./gradlew jacocoTestCoverageVerification</code> task will fail if code coverage is below 60%.</p>
 </li>
 </ol>
 </div>
-<div class="listingblock data-line-123">
+<div class="listingblock data-line-129">
 <div class="content">
 <pre class="highlight"><code class="language-gradle" data-lang="gradle">jacocoTestCoverageVerification {
 	violationRules {
@@ -3786,7 +3822,7 @@ the list of people.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-03-22 12:14:43 -0400
+Last updated 2023-03-22 12:18:40 -0400
 </div>
 </div>
 </body>
